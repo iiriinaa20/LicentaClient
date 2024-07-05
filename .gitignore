@@ -37,8 +37,8 @@
 # /linux
 # /macos
 # /test
-/web
-/windows
+# /web
+# /windows
 
 # # Symbolication related
 # app.*.symbols
