@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "880914266003",
+    "project_id": "licenta-ead67",
+    "storage_bucket": "licenta-ead67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880914266003:android:9c544fcbe91b9d842e5a66",
+        "android_client_info": {
+          "package_name": "com.example.ceta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880914266003-8rst0d3sot3jdk5g7t5ijahvak1njogs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ceta",
+            "certificate_hash": "3fea909309de8239178960c39dba43cc1cf4113c"
+          }
+        },
+        {
+          "client_id": "880914266003-28vndg1bl3pmkenf66694o0lvv5pa6q6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX-tRf63-t-4wbCUZpB21F1frA81Yi-bw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "880914266003-28vndg1bl3pmkenf66694o0lvv5pa6q6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
