@@ -32,11 +32,11 @@
 /build/
 .idea
 /android
-/ios
+# /ios
 # /lib
-/linux
-/macos
-/test
+# /linux
+# /macos
+# /test
 /web
 /windows
 
