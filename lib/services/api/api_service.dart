@@ -44,6 +44,23 @@ class ApiService {
     }
   }
 
+   Future<List<dynamic>> getAttendancesByCourseId(String courseId) async {
+    final response = await http.get(Uri.parse('$baseUrl/attendances/$courseId/by_course'));
+    if (response.statusCode == 200) {
+      return List<dynamic>.from(json.decode(response.body));
+    } else {
+      throw Exception('Failed to load attendances');
+    }
+  }
+   Future<List<dynamic>> getAttendancesByCourseIdForDate(String courseId, String? date) async {
+    final response = await http.get(Uri.parse('$baseUrl/attendances/$courseId/by_course?date=$date'));
+    if (response.statusCode == 200) {
+      return List<dynamic>.from(json.decode(response.body));
+    } else {
+      throw Exception('Failed to load attendances');
+    }
+  }
+
 Future<dynamic> getUserDataById(String userId) async {
   final response = await http.get(Uri.parse('$baseUrl/users/$userId'));
 
@@ -112,7 +129,14 @@ Future<dynamic> getPlanificationByCourseId(String courseId) async {
   }
 }
 
-
+Future<dynamic> getPlanificationByUserId(String userId) async {
+  final response = await http.get(Uri.parse('$baseUrl/courses_planification/$userId/by_teacher'));
+  if (response.statusCode == 200) {
+    return json.decode(response.body);
+  } else {
+    throw Exception('Failed to load course data');
+  }
+}
   Future<dynamic> post(String endpoint, Map<String, dynamic> data) async {
     final response = await http.post(
       Uri.parse('$baseUrl$endpoint'),
